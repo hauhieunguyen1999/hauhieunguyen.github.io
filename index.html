@@ -57,17 +57,26 @@
         <section class="architecture-section" aria-labelledby="architecture-title">
           <h2 id="architecture-title">Architecture at a glance</h2>
           <p class="architecture-caption">From public domain to home lab</p>
-          <ol class="deployment-flow">
-            <li><span class="step">01</span><div><h3>Cloudflare</h3><p>DNS & secure tunnel</p></div></li>
-            <li><span class="step">02</span><div><h3>Ubuntu Server</h3><p>Virtual machine on Proxmox</p></div></li>
-            <li><span class="step">03</span><div><h3>Docker</h3><p>Containerized application services</p></div></li>
-          </ol>
-          <div class="service-grid">
-            <div><span>FRONTEND</span><h3>Angular</h3><p>Served by Nginx</p></div>
-            <div><span>BACKEND</span><h3>FastAPI</h3><p>Python REST API</p></div>
-            <div><span>DATABASE</span><h3>PostgreSQL</h3><p>Relational data</p></div>
-          </div>
-          <p class="data-flow">Angular <span aria-hidden="true">→</span> REST API <span aria-hidden="true">→</span> FastAPI <span aria-hidden="true">→</span> SQL <span aria-hidden="true">→</span> PostgreSQL</p>
+          <figure class="architecture-diagram" aria-label="Visitors connect through Cloudflare DNS and Tunnel to a home lab running an Ubuntu Server virtual machine on Proxmox. Docker hosts Angular served by Nginx, a FastAPI REST API, and PostgreSQL.">
+            <div class="diagram-node entry-node"><span class="node-label">PUBLIC WEB</span><h3>Visitors</h3><p>lepetitnails.com</p></div>
+            <div class="diagram-connector" aria-hidden="true"><span>HTTPS</span></div>
+            <div class="diagram-node entry-node"><h3>Cloudflare</h3><p>DNS &amp; Cloudflare Tunnel</p></div>
+            <div class="diagram-connector" aria-hidden="true"><span>Secure tunnel</span></div>
+            <div class="host-boundary">
+              <div class="boundary-heading"><span class="node-label">HOME LAB</span><h3>Proxmox <span> / Ubuntu Server VM</span></h3></div>
+              <div class="docker-boundary">
+                <p class="node-label">DOCKER CONTAINERS</p>
+                <div class="container-flow">
+                  <div class="diagram-node"><span class="node-label">FRONTEND</span><h3>Angular</h3><p>Nginx</p></div>
+                  <div class="service-connector" aria-hidden="true"><span>REST</span><b>→</b></div>
+                  <div class="diagram-node"><span class="node-label">BACKEND</span><h3>FastAPI</h3><p>Python API</p></div>
+                  <div class="service-connector" aria-hidden="true"><span>SQL</span><b>→</b></div>
+                  <div class="diagram-node"><span class="node-label">DATABASE</span><h3>PostgreSQL</h3><p>Relational data</p></div>
+                </div>
+              </div>
+            </div>
+            <figcaption>Request flow and hosting environment</figcaption>
+          </figure>
         </section>
       </div>
     </div>
