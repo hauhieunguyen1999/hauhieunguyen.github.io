@@ -29,3 +29,118 @@ h2 {
 a {
     margin-right: 15px;
 }
+.architecture-section {
+  padding: 70px 20px;
+  background: #0d1117;
+  color: #ffffff;
+  text-align: center;
+}
+
+.architecture-section .container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.architecture-section h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.architecture-intro {
+  max-width: 750px;
+  margin: 0 auto 40px;
+  color: #b7c0cc;
+  line-height: 1.7;
+}
+
+.architecture {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.architecture-box {
+  width: 100%;
+  max-width: 450px;
+  padding: 22px;
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 12px;
+}
+
+.architecture-box h3,
+.service-card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.architecture-box p,
+.service-card p {
+  color: #b7c0cc;
+}
+
+.server-box {
+  border-color: #58a6ff;
+}
+
+.arrow {
+  font-size: 30px;
+  margin: 10px 0;
+  color: #58a6ff;
+}
+
+.docker-title {
+  margin: 10px 0 25px;
+}
+
+.docker-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.service-card {
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 12px;
+  padding: 25px 20px;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  border-color: #58a6ff;
+}
+
+.data-flow {
+  margin-top: 35px;
+  width: 100%;
+  padding: 25px;
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 12px;
+}
+
+.data-flow p {
+  font-family: monospace;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.data-flow span {
+  color: #58a6ff;
+  margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+  .docker-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .data-flow p {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+}
