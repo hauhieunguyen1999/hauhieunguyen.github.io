@@ -80,7 +80,87 @@
 
     </div>
 </section>
+<section class="architecture-section" id="architecture">
+  <div class="container">
+    <h2>Le Petit Nails — Full-Stack Architecture</h2>
 
+    <p class="architecture-intro">
+      Production-style Angular website hosted on my home lab using
+      Proxmox, Ubuntu Server, Docker, FastAPI, PostgreSQL, nginx,
+      and Cloudflare Tunnel.
+    </p>
+
+    <div class="architecture">
+
+      <!-- Internet -->
+      <div class="architecture-box">
+        <h3>🌐 Internet</h3>
+        <p>lepetitnails.com</p>
+      </div>
+
+      <div class="arrow">↓</div>
+
+      <!-- Cloudflare -->
+      <div class="architecture-box">
+        <h3>☁️ Cloudflare</h3>
+        <p>DNS + Cloudflare Tunnel</p>
+      </div>
+
+      <div class="arrow">↓</div>
+
+      <!-- Server -->
+      <div class="architecture-box server-box">
+        <h3>🖥️ Ubuntu Server VM</h3>
+        <p>Hosted on Proxmox</p>
+      </div>
+
+      <div class="arrow">↓</div>
+
+      <h3 class="docker-title">🐳 Docker Containers</h3>
+
+      <div class="docker-grid">
+
+        <!-- Angular -->
+        <div class="service-card">
+          <h3>Angular Frontend</h3>
+          <p>nginx</p>
+          <p>Container: <strong>angular-web</strong></p>
+          <p>Port: <strong>80</strong></p>
+        </div>
+
+        <!-- FastAPI -->
+        <div class="service-card">
+          <h3>FastAPI Backend</h3>
+          <p>Python REST API</p>
+          <p>Container: <strong>fastapi-api</strong></p>
+          <p>Port: <strong>8000</strong></p>
+        </div>
+
+        <!-- PostgreSQL -->
+        <div class="service-card">
+          <h3>PostgreSQL</h3>
+          <p>Relational Database</p>
+          <p>Container: <strong>postgres-db</strong></p>
+          <p>Port: <strong>5432</strong></p>
+        </div>
+
+      </div>
+
+      <div class="data-flow">
+        <h3>Application Data Flow</h3>
+
+        <p>
+          Angular
+          <span>→ REST API →</span>
+          FastAPI
+          <span>→ SQL →</span>
+          PostgreSQL
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 <footer>
     <p>© 2026 Hieu Nguyen Hau </p>
