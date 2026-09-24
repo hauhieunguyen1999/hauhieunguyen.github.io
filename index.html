@@ -1,170 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Hieu Nguyen Hau  | Cloud & IT</title>
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hieu Nguyen Hau — Computer Science student focused on cloud infrastructure, Linux, networking, and software development.">
+  <title>Hieu Nguyen Hau | Cloud & IT</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <div class="page-top"><a class="wordmark" href="#">HN<span>.</span></a><button type="button" onclick="window.print()">Print / Save PDF <span aria-hidden="true">↗</span></button></div>
+  <main class="resume">
+    <header class="hero">
+      <p class="eyebrow">CLOUD INFRASTRUCTURE & SOFTWARE DEVELOPMENT</p>
+      <h1>Hieu Nguyen Hau<span>.</span></h1>
+      <p class="intro">Computer Science student with hands-on experience deploying and managing a self-hosted web application.</p>
+      <div class="hero-meta"><span>Western Governors University</span><span>Expected graduation · May 2027</span></div>
+    </header>
 
-<header>
-    <h1>Hieu Nguyen Hau </h1>
-    <p>Cloud • IT • Software Development</p>
+    <div class="resume-grid">
+      <aside>
+        <section aria-labelledby="profile-title">
+          <h2 id="profile-title">Profile</h2>
+          <p>Interested in cloud infrastructure, Linux, networking, and software development. Applying these interests through a home lab that brings together virtualization, containers, and web services.</p>
+        </section>
+        <section aria-labelledby="education-title">
+          <h2 id="education-title">Education</h2>
+          <h3>Western Governors University</h3>
+          <p>Bachelor of Science<br>Computer Science</p>
+          <p class="muted">Expected May 2027</p>
+        </section>
+        <section aria-labelledby="skills-title">
+          <h2 id="skills-title">Technical skills</h2>
+          <dl class="skills">
+            <dt>Infrastructure</dt><dd>Linux / Ubuntu Server, Docker, Proxmox, Nginx, Cloudflare Tunnel</dd>
+            <dt>Development & data</dt><dd>Angular, FastAPI, SQL, PostgreSQL</dd>
+            <dt>Tools & foundations</dt><dd>Git, Networking</dd>
+          </dl>
+        </section>
+      </aside>
 
-    <a href="https://github.com/yourusername">GitHub</a>
-    <a href="your-linkedin-url">LinkedIn</a>
-</header>
-
-
-<section>
-    <h2>About Me</h2>
-
-    
-<section id="education">
-    <h2>Education</h2>
-
-    <div class="education-item">
-        <h3>Western Governors University</h3>
-        <p>
-            <strong>Bachelor of Science in Computer Science</strong>
-        </p>
-        <p>
-            Expected Graduation: May 2027
-        </p>
+      <div class="experience">
+        <section aria-labelledby="projects-title">
+          <h2 id="projects-title">Selected project</h2>
+          <article class="project">
+            <div class="project-heading"><p class="eyebrow">SELF-HOSTED WEB APPLICATION</p><span class="project-number" aria-hidden="true">01</span></div>
+            <h3>Le Petit Nails</h3>
+            <p class="project-summary">A production-style Angular website deployed and managed in a home lab environment.</p>
+            <ul class="accomplishments">
+              <li>Deployed an Angular website on an Ubuntu Server virtual machine hosted on Proxmox.</li>
+              <li>Containerized the application stack with Docker, using Nginx to serve the frontend alongside a FastAPI backend and PostgreSQL database.</li>
+              <li>Connected the self-hosted application to its public domain using Cloudflare DNS and Cloudflare Tunnel.</li>
+            </ul>
+            <a class="project-link" href="https://lepetitnails.com">Visit lepetitnails.com <span aria-hidden="true">↗</span></a>
+          </article>
+        </section>
+        <section class="architecture-section" aria-labelledby="architecture-title">
+          <h2 id="architecture-title">Architecture at a glance</h2>
+          <p class="architecture-caption">From public domain to home lab</p>
+          <ol class="deployment-flow">
+            <li><span class="step">01</span><div><h3>Cloudflare</h3><p>DNS & secure tunnel</p></div></li>
+            <li><span class="step">02</span><div><h3>Ubuntu Server</h3><p>Virtual machine on Proxmox</p></div></li>
+            <li><span class="step">03</span><div><h3>Docker</h3><p>Containerized application services</p></div></li>
+          </ol>
+          <div class="service-grid">
+            <div><span>FRONTEND</span><h3>Angular</h3><p>Served by Nginx</p></div>
+            <div><span>BACKEND</span><h3>FastAPI</h3><p>Python REST API</p></div>
+            <div><span>DATABASE</span><h3>PostgreSQL</h3><p>Relational data</p></div>
+          </div>
+          <p class="data-flow">Angular <span aria-hidden="true">→</span> REST API <span aria-hidden="true">→</span> FastAPI <span aria-hidden="true">→</span> SQL <span aria-hidden="true">→</span> PostgreSQL</p>
+        </section>
+      </div>
     </div>
-</section>
-
-
-    <p>
-        Computer Science student interested in cloud infrastructure,
-        Linux, networking, and software development.
-    </p>
-</section>
-
-    <section>
-    <h2>Skills</h2>
-
-    <p>
-        Linux • Docker • Networking • Git • Angular •
-        SQL 
-    </p>
-</section>
-
-<section>
-    <h2>Projects</h2>
-
-    <div class="project">
-
-        <h3>Self-Hosted Web Application</h3>
-
-        <p>
-            Deployed and managed a production-style Angular website
-            using a self-hosted Ubuntu server and Docker within a home lab environment. 
-        </p>
-
-        <p>
-            <strong>Technologies:</strong>
-            Angular, Linux, Docker, Nginx,
-            Proxmox, Cloudflare Tunnel
-        </p>
-
-        <a href="https://lepetitnails.com">Live Website</a>
-
-        <a href="https://github.com/yourusername/project">
-            GitHub
-        </a>
-
-    </div>
-</section>
-<section class="architecture-section" id="architecture">
-  <div class="container">
-    <h2>Le Petit Nails — Full-Stack Architecture</h2>
-
-    <p class="architecture-intro">
-      Production-style Angular website hosted on my home lab using
-      Proxmox, Ubuntu Server, Docker, FastAPI, PostgreSQL, nginx,
-      and Cloudflare Tunnel.
-    </p>
-
-    <div class="architecture">
-
-      <!-- Internet -->
-      <div class="architecture-box">
-        <h3>🌐 Internet</h3>
-        <p>lepetitnails.com</p>
-      </div>
-
-      <div class="arrow">↓</div>
-
-      <!-- Cloudflare -->
-      <div class="architecture-box">
-        <h3>☁️ Cloudflare</h3>
-        <p>DNS + Cloudflare Tunnel</p>
-      </div>
-
-      <div class="arrow">↓</div>
-
-      <!-- Server -->
-      <div class="architecture-box server-box">
-        <h3>🖥️ Ubuntu Server VM</h3>
-        <p>Hosted on Proxmox</p>
-      </div>
-
-      <div class="arrow">↓</div>
-
-      <h3 class="docker-title">🐳 Docker Containers</h3>
-
-      <div class="docker-grid">
-
-        <!-- Angular -->
-        <div class="service-card">
-          <h3>Angular Frontend</h3>
-          <p>nginx</p>
-          <p>Container: <strong>angular-web</strong></p>
-          <p>Port: <strong>80</strong></p>
-        </div>
-
-        <!-- FastAPI -->
-        <div class="service-card">
-          <h3>FastAPI Backend</h3>
-          <p>Python REST API</p>
-          <p>Container: <strong>fastapi-api</strong></p>
-          <p>Port: <strong>8000</strong></p>
-        </div>
-
-        <!-- PostgreSQL -->
-        <div class="service-card">
-          <h3>PostgreSQL</h3>
-          <p>Relational Database</p>
-          <p>Container: <strong>postgres-db</strong></p>
-          <p>Port: <strong>5432</strong></p>
-        </div>
-
-      </div>
-
-      <div class="data-flow">
-        <h3>Application Data Flow</h3>
-
-        <p>
-          Angular
-          <span>→ REST API →</span>
-          FastAPI
-          <span>→ SQL →</span>
-          PostgreSQL
-        </p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<footer>
-    <p>© 2026 Hieu Nguyen Hau </p>
-</footer>
-
+    <footer><span>Hieu Nguyen Hau</span><span>Cloud · IT · Software Development</span></footer>
+  </main>
 </body>
 </html>
